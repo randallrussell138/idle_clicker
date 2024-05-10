@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="idle_clicker"
-run/main_scene="res://scenes/game.tscn"
+run/main_scene="res://scenes/character_seletion.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://gameicon.png"
 

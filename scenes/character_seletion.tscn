@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqcroofee3ocq"]
+[gd_scene load_steps=3 format=3 uid="uid://cqcroofee3ocq"]
 
 [ext_resource type="Script" path="res://scripts/character_seletion.gd" id="1_ov0do"]
+[ext_resource type="Texture2D" uid="uid://bxgy215ysf7rx" path="res://assets/Scene_Assets/Choose Your Kitty.png" id="2_efqpt"]
 
 [node name="Character_seletion" type="Node2D"]
 script = ExtResource("1_ov0do")
@@ -8,18 +9,32 @@ script = ExtResource("1_ov0do")
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.600044, 0.601367)
+texture = ExtResource("2_efqpt")
 
 [node name="black_cat" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 64.0
+offset_top = 327.0
+offset_right = 104.0
+offset_bottom = 367.0
+scale = Vector2(5.42173, 4.31966)
 
 [node name="orange_cat" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 473.0
+offset_top = 339.0
+offset_right = 513.0
+offset_bottom = 379.0
+scale = Vector2(5.23725, 3.99667)
 
 [node name="white_cat" type="TextureButton" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 831.0
+offset_top = 331.0
+offset_right = 871.0
+offset_bottom = 371.0
+scale = Vector2(5.32501, 4.56933)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(574, 324)
 
 [connection signal="pressed" from="black_cat" to="." method="_on_black_cat_pressed"]
 [connection signal="pressed" from="orange_cat" to="." method="_on_orange_cat_pressed"]

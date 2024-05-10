@@ -11,7 +11,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 func update_animation():
-	var animation_prefix = "black_cat" + "_"
+	var animation_prefix = Global.character + "_"
 	var direction = Input.get_vector("walk_left", "walk_right", "walk_up", "walk_down")
 	velocity = direction * speed
 	
@@ -26,9 +26,9 @@ func update_animation():
 			anim = "walk_down"
 		if direction.x < 0 :
 			anim = "walk_left"
+			
 	else:
 		anim = "idle"
 	
-	
-		
 	animated_sprite.play(animation_prefix + anim)
+	
