@@ -115,7 +115,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_hk822")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"black_cat_idle",
 "speed": 2.0
 }, {
 "frames": [{
@@ -132,7 +132,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_1bu6j")
 }],
 "loop": true,
-"name": &"sitting",
+"name": &"black_cat_sitting",
 "speed": 2.0
 }, {
 "frames": [{
@@ -149,7 +149,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_xjhdg")
 }],
 "loop": true,
-"name": &"walk_down",
+"name": &"black_cat_walk_down",
 "speed": 5.0
 }, {
 "frames": [{
@@ -166,7 +166,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_fi4oy")
 }],
 "loop": true,
-"name": &"walk_left",
+"name": &"black_cat_walk_left",
 "speed": 5.0
 }, {
 "frames": [{
@@ -183,7 +183,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3ddb6")
 }],
 "loop": true,
-"name": &"walk_right",
+"name": &"black_cat_walk_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -200,7 +200,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_4rhyw")
 }],
 "loop": true,
-"name": &"walk_up",
+"name": &"black_cat_walk_up",
 "speed": 5.0
 }]
 
@@ -213,9 +213,9 @@ script = ExtResource("1_lbv1r")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -80)
 sprite_frames = SubResource("SpriteFrames_xlse8")
-animation = &"sitting"
-autoplay = "idle"
-frame_progress = 0.444137
+animation = &"black_cat_idle"
+autoplay = "black_cat_idle"
+frame_progress = 0.71906
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
