@@ -20,7 +20,7 @@ offset_bottom = 795.0
 scale = Vector2(1.31855, 1.35904)
 texture = ExtResource("2_mw5ug")
 
-[node name="pet" parent="." instance=ExtResource("1_gnk75")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_gnk75")]
 position = Vector2(964, 603)
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -97,6 +97,5 @@ theme_override_colors/font_color = Color(0.298039, 0.207843, 0.513726, 1)
 theme_override_font_sizes/font_size = 50
 text = "0"
 
-[connection signal="input_event" from="pet" to="." method="_on_pet_input_event"]
 [connection signal="pressed" from="menu_button" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="menu/exit_menu" to="menu" method="_on_exit_menu_pressed"]

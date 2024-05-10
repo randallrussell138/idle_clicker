@@ -6,7 +6,7 @@ var speed = 200
 func _ready():
 	animated_sprite = $AnimatedSprite2D
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	update_animation()
 	move_and_slide()
 	
@@ -31,4 +31,5 @@ func update_animation():
 		anim = "idle"
 	
 	animated_sprite.play(animation_prefix + anim)
+
 	

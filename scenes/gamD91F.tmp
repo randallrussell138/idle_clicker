@@ -21,6 +21,7 @@ scale = Vector2(1.31855, 1.35904)
 texture = ExtResource("2_mw5ug")
 
 [node name="pet" parent="." instance=ExtResource("1_gnk75")]
+unique_name_in_owner = true
 position = Vector2(964, 603)
 
 [node name="Camera2D" type="Camera2D" parent="."]

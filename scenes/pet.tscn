@@ -590,7 +590,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_0kolr"]
 radius = 24.0832
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="pet" type="CharacterBody2D"]
 script = ExtResource("1_lbv1r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -598,7 +598,7 @@ position = Vector2(-1, -80)
 sprite_frames = SubResource("SpriteFrames_xlse8")
 animation = &"black_cat_idle"
 autoplay = "black_cat_idle"
-frame_progress = 0.211614
+frame_progress = 0.82765
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3, -23)
