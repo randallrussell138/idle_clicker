@@ -1,13 +1,55 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyb5648k6o0w3"]
+[gd_scene load_steps=5 format=3 uid="uid://dyb5648k6o0w3"]
 
 [ext_resource type="PackedScene" uid="uid://cra5caor1quwr" path="res://scenes/pet.tscn" id="1_gnk75"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_vs32e"]
+[ext_resource type="Texture2D" uid="uid://bcfw375jhnwsb" path="res://assets/Scene_Assets/window.png" id="3_jfska"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xrgjh"]
+normal = Vector2(0, 1)
+distance = -92.0
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_vs32e")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1456.0
+offset_bottom = 795.0
+scale = Vector2(1.31855, 1.35904)
+texture = ExtResource("3_jfska")
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_gnk75")]
-position = Vector2(570, 484)
+position = Vector2(964, 603)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 326)
+position = Vector2(957, 543)
+
+[node name="Top_Barrier" type="StaticBody2D" parent="."]
+position = Vector2(967, 186)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top_Barrier"]
+shape = SubResource("WorldBoundaryShape2D_xrgjh")
+debug_color = Color(0.999038, 0.0248956, 0, 0.42)
+
+[node name="Top_Barrier2" type="StaticBody2D" parent="."]
+position = Vector2(1766, 491)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top_Barrier2"]
+shape = SubResource("WorldBoundaryShape2D_xrgjh")
+debug_color = Color(0.999038, 0.0248956, 0, 0.42)
+
+[node name="Top_Barrier3" type="StaticBody2D" parent="."]
+position = Vector2(964, 947)
+rotation = 3.14159
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top_Barrier3"]
+shape = SubResource("WorldBoundaryShape2D_xrgjh")
+debug_color = Color(0.999038, 0.0248956, 0, 0.42)
+
+[node name="Top_Barrier4" type="StaticBody2D" parent="."]
+position = Vector2(101, 510)
+rotation = -1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Top_Barrier4"]
+shape = SubResource("WorldBoundaryShape2D_xrgjh")
+debug_color = Color(0.999038, 0.0248956, 0, 0.42)
