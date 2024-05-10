@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cra5caor1quwr" path="res://scenes/pet.tscn" id="1_gnk75"]
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_vs32e"]
-[ext_resource type="Texture2D" uid="uid://bcfw375jhnwsb" path="res://assets/Scene_Assets/window.png" id="3_jfska"]
+[ext_resource type="Texture2D" uid="uid://cqick43xvdduu" path="res://assets/Scene_Assets/game.png" id="2_mw5ug"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_xrgjh"]
 normal = Vector2(0, 1)
@@ -15,7 +15,7 @@ script = ExtResource("1_vs32e")
 offset_right = 1456.0
 offset_bottom = 795.0
 scale = Vector2(1.31855, 1.35904)
-texture = ExtResource("3_jfska")
+texture = ExtResource("2_mw5ug")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_gnk75")]
 position = Vector2(964, 603)
@@ -53,3 +53,11 @@ rotation = -1.5708
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Top_Barrier4"]
 shape = SubResource("WorldBoundaryShape2D_xrgjh")
 debug_color = Color(0.999038, 0.0248956, 0, 0.42)
+
+[node name="exit" type="TextureButton" parent="."]
+offset_left = 1816.0
+offset_top = 27.0
+offset_right = 1856.0
+offset_bottom = 67.0
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

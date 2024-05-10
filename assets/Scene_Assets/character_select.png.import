@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxgy215ysf7rx"
-path="res://.godot/imported/Choose Your Kitty.png-777497d0b8f044bb1be5a429e8f5ba81.ctex"
+uid="uid://c53y5xirxg10c"
+path="res://.godot/imported/character_select.png-1b11a87b49a64cd535992b616bccf3c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Scene_Assets/Choose Your Kitty.png"
-dest_files=["res://.godot/imported/Choose Your Kitty.png-777497d0b8f044bb1be5a429e8f5ba81.ctex"]
+source_file="res://assets/Scene_Assets/character_select.png"
+dest_files=["res://.godot/imported/character_select.png-1b11a87b49a64cd535992b616bccf3c5.ctex"]
 
 [params]
 
