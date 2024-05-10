@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqcroofee3ocq"]
+
+[ext_resource type="Script" path="res://scripts/character_seletion.gd" id="1_ov0do"]
+
+[node name="Character_seletion" type="Node2D"]
+script = ExtResource("1_ov0do")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="black_cat" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="orange_cat" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="white_cat" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="black_cat" to="." method="_on_black_cat_pressed"]
+[connection signal="pressed" from="orange_cat" to="." method="_on_orange_cat_pressed"]
+[connection signal="pressed" from="white_cat" to="." method="_on_white_cat_pressed"]

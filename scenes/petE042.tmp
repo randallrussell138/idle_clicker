@@ -611,9 +611,11 @@ script = ExtResource("1_lbv1r")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -80)
 sprite_frames = SubResource("SpriteFrames_xlse8")
-animation = &"black_cat_idle"
+animation = &"white_cat_walk_right"
 autoplay = "black_cat_idle"
+frame_progress = 0.957008
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(3, -23)
 shape = SubResource("CircleShape2D_0kolr")
