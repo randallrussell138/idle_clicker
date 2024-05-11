@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl2chxxe7i2s"]
+
+[ext_resource type="Texture2D" uid="uid://cqick43xvdduu" path="res://assets/Scene_Assets/game.png" id="1_mawej"]
+[ext_resource type="FontFile" uid="uid://cdvg1wdgo830x" path="res://assets/catcut-0vw1z.otf" id="2_dvmdn"]
+[ext_resource type="Texture2D" uid="uid://dl2p3tmsuyb72" path="res://assets/ui.jpg" id="3_06d51"]
+
+[node name="shop" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 523.0
+offset_top = 241.0
+offset_right = 1446.0
+offset_bottom = 745.0
+texture = ExtResource("1_mawej")
+expand_mode = 1
+
+[node name="shop_1" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="shop_1"]
+offset_left = 777.0
+offset_top = 296.0
+offset_right = 1171.0
+offset_bottom = 422.0
+theme_override_colors/font_color = Color(0.301961, 0.207843, 0.537255, 1)
+theme_override_fonts/font = ExtResource("2_dvmdn")
+theme_override_font_sizes/font_size = 125
+text = "Shop"
+
+[node name="1" type="TextureRect" parent="shop_1"]
+offset_left = 634.0
+offset_top = 534.0
+offset_right = 775.0
+offset_bottom = 675.0
+texture = ExtResource("3_06d51")
+
+[node name="2" type="TextureRect" parent="shop_1"]
+offset_left = 913.0
+offset_top = 534.0
+offset_right = 1054.0
+offset_bottom = 675.0
+texture = ExtResource("3_06d51")
+
+[node name="3" type="TextureRect" parent="shop_1"]
+offset_left = 1201.0
+offset_top = 534.0
+offset_right = 1342.0
+offset_bottom = 675.0
+texture = ExtResource("3_06d51")
