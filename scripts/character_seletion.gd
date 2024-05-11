@@ -10,10 +10,6 @@ func hard_reset(color):
 	
 func _on_black_cat_pressed():
 	hard_reset("black")
-	#Global.character = "black_cat"
-	#get_tree().change_scene_to_file("res://scenes/game.tscn")
-	#Global.coin = 0
-	#Game.start_game()
 
 func _on_orange_cat_pressed():
 	hard_reset("orange")

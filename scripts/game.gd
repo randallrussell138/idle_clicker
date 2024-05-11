@@ -18,6 +18,7 @@ func _input(event):
 # Function to start the game
 func start_game():
 	game_started = true
+	set_process_input(true)
 
 func _on_menu_button_pressed():
 	%menu.visible = true
