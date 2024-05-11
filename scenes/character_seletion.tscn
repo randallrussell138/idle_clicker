@@ -38,13 +38,20 @@ scale = Vector2(6.95562, 7.08206)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
+[node name="mute_bpg" type="TextureButton" parent="."]
+offset_left = 1768.0
+offset_top = 120.0
+offset_right = 1837.0
+offset_bottom = 180.0
+
 [node name="exit_game" type="TextureButton" parent="."]
-offset_left = 1814.0
-offset_top = 30.0
-offset_right = 1854.0
-offset_bottom = 70.0
+offset_left = 1813.0
+offset_top = 29.0
+offset_right = 1853.0
+offset_bottom = 69.0
 
 [connection signal="pressed" from="black_cat" to="." method="_on_black_cat_pressed"]
 [connection signal="pressed" from="orange_cat" to="." method="_on_orange_cat_pressed"]
 [connection signal="pressed" from="white_cat" to="." method="_on_white_cat_pressed"]
+[connection signal="pressed" from="mute_bpg" to="." method="_on_mute_bpg_pressed"]
 [connection signal="pressed" from="exit_game" to="." method="_on_texture_button_pressed"]

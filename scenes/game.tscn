@@ -98,5 +98,5 @@ theme_override_font_sizes/font_size = 50
 text = "0"
 
 [connection signal="input_event" from="pet" to="." method="_on_pet_input_event"]
-[connection signal="pressed" from="menu_button" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="menu_button" to="." method="_on_menu_button_pressed"]
 [connection signal="pressed" from="menu/exit_menu" to="menu" method="_on_exit_menu_pressed"]

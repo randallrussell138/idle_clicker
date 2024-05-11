@@ -17,6 +17,7 @@ config/icon="res://gameicon.png"
 
 [autoload]
 
+BgMusic="*res://scenes/bg_music.tscn"
 Global="*res://scripts/global.gd"
 Game="*res://scripts/game.gd"
 
